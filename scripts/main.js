@@ -2,9 +2,15 @@ let defaultSize=16;
 let isRainbow=false;
 const GRAY_CODE=`rgb(128, 128, 128)`;
 const BLACK_CODE=`rgb(0, 0, 0)`;
+const eraser = document.querySelector(".eraser");
 const buttonSize = document.querySelector(".size-grid");
 const defaultColors = document.querySelector(".colors");
 const colorPicker = document.querySelector("#colorPicker");
+
+eraser.addEventListener("click",()=>{
+    isRainbow=false;
+    setColors(`rgb(255, 255, 255)`);
+});
 
 colorPicker.addEventListener("change",(e)=>{
     isRainbow=false;
@@ -48,7 +54,7 @@ function createGrid(){
     for(i=0;i<defaultSize*defaultSize;i++){
         let boxs = document.createElement("div");
         boxs.classList.add("boxs");
-        boxs.style.cssText="border: .1px solid #000000"
+        
         panel.appendChild(boxs);
     }
     setColors(GRAY_CODE);
