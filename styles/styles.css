@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+html{
+    font-size: 10px;   
+}
+main{
+    background-image: radial-gradient(circle at 50% -6.32%, #cdcb50 0, #d6c244 8.33%, #deb739 16.67%, #e5ab2f 25%, #eb9d26 33.33%, #f08d21 41.67%, #f37b1f 50%, #f66722 58.33%, #f8522a 66.67%, #f93833 75%, #fa0f3f 83.33%, #f9004c 91.67%, #f7005a 100%);
+    width: 100vw;
+    height: 100vh;
+    display:flex ;
+}
+.subtitle{
+    font-size: 2.5rem;
+}
+.screen{
+    width: 60vw;
+    height: auto;
+    padding: 15rem;
+    margin: auto;
+    display: flex;  
+    background-color:#881a21;
+    box-shadow: 20px -10px #5a1217;
+    border-radius: 2rem;
+}
+
+.tools{
+    background-color:#5f1318;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ffffff;
+}
+.tools input{
+    margin: 1rem;
+}
+
+.panel{
+    width: 50rem;
+    height: 50rem;
+    display: grid;
+    margin: auto;
+    background-color: #ffffff;
+    border: .5rem solid #000000;
+}
+.size-grid{
+    width: 4rem;
+    height: 4rem;
+}
