@@ -66,6 +66,7 @@ function resetGrid(){
     boxs.forEach(e=>panel.removeChild(e));
 }
 
+
 function rainbowColor(){
     let r = Math.floor(Math.random()*255);
     let g = Math.floor(Math.random()*255);
