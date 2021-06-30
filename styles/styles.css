@@ -12,7 +12,123 @@ main{
     height: 100vh;
     display:flex ;
 }
+.screen{
+    width: 45vw;
+    height: 60vh;
+    margin: auto;
+    background-color: aquamarine;
+    display: flex;
+    border-radius: 3rem;
+    background-color:#881a21;
+    box-shadow: 20px -10px #5a1217;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+}
+
+.screen .panel{
+    width: 50rem;
+    height: 50rem;
+    background-color: #ffffffff;
+    display: grid;
+    margin: auto;
+}
 .subtitle{
+    font-size: 2rem;
+}
+.tools{
+    width: 20rem;
+    height: 30rem;
+    background-color: #5a1217;
+    margin: auto 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.size-grid{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 1rem;
+}
+#colorPicker{
+    width: 5rem;
+    height: 3rem;
+    padding: .5rem;
+}
+@media (max-width: 800px) {
+    html {
+      font-size: 10px;
+    }
+    .screen{
+        font-size: 1.8rem;
+        display: flex;
+        width: 80vw;
+        height: 60vh;
+        flex-direction: column-reverse;
+    }
+    .screen .panel{
+        margin-top: 5rem;
+    }
+    .subtitle{
+        display: none;
+    }
+    .tools{
+        margin:auto;
+        width: 50rem;
+        height: 10rem;
+        flex-direction: row;
+    }
+  }
+@media (max-width: 768px) {
+    html {
+      font-size: 10px;
+    }
+    .screen{
+        font-size: 1.8rem;
+        display: flex;
+        width: 80vw;
+        height: 60vh;
+        flex-direction: column-reverse;
+    }
+    .screen .panel{
+        margin-top: 5rem;
+    }
+    .subtitle{
+        display: none;
+    }
+    .tools{
+        margin: 1rem auto;
+        width: 50rem;
+        height: 10rem;
+        flex-direction: row;
+    }
+  }
+@media (max-width: 480px) {
+    html {
+      font-size: 5px;
+    }
+    .screen{
+        display: flex;
+        width: 80vw;
+        height: 60vh;
+        flex-direction: column-reverse;
+    }
+    .screen .panel{
+        margin-top: 10rem;
+    }
+    .subtitle{
+        display: none;
+    }
+    .tools{
+        margin: auto;
+        width: 50rem;
+        height: 15rem;
+        flex-direction: row;
+    }
+  }
+
+/*.subtitle{
     font-size: 2.5rem;
 }
 .screen{
@@ -52,4 +168,4 @@ main{
 .size-grid{
     width: 4rem;
     height: 4rem;
-}
+}*/
